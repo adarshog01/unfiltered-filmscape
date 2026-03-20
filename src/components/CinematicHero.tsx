@@ -6,7 +6,7 @@ const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSe4Jp8bhxJ8XaT
 const fadeUp = (delay: number) => ({
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 1, delay, ease: [0.25, 0.46, 0.45, 0.94] },
+  transition: { duration: 1, delay, ease: [0.25, 0.46, 0.45, 0.94] as const },
 })
 
 export default function CinematicHero() {
